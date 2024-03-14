@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HomeHero = () => {
   return (
-    <section className=" lg:min-h-screen  py-10 lg:py-0  container flex flex-col lg:flex-row gap-10 lg:items-center">
+    <section className="  py-10 lg:py-14  container flex flex-col lg:flex-row gap-10 lg:items-center">
       <div className=" basis-full lg:basis-1/2 space-y-5 lg:space-y-8">
         <h2 className=" max-w-[565px] text-3xl xl:text-5xl font-bold">
           Clinica ta stomatologică de încredere
