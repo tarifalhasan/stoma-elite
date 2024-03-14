@@ -26,7 +26,7 @@ const Medici = () => {
         <p className=" text-sm text-center font-bold uppercase text-primary">
           Medici
         </p>
-        <h3 className="text-3xl xl:text-5xl font-bold">
+        <h3 className="text-2xl xl:text-3xl font-bold">
           Specialiștii din clinica noastră
         </h3>
       </div>

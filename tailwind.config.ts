@@ -55,6 +55,7 @@ const config = {
         },
         skin: {
           gray: "#696969",
+          tiffany: "#7EE5F4",
         },
       },
       borderRadius: {
