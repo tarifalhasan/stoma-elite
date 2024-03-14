@@ -1,4 +1,7 @@
-const Services = () => {
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+
+const Services = ({ className }: { className?: string }) => {
   const Data = [
     {
       name: "Endodonție",
@@ -47,7 +50,7 @@ const Services = () => {
     },
   ];
   return (
-    <section className="   bg-skin-tiffany bg-opacity-20  py-14 xl:py-16">
+    <section className={cn(className, "bg-opacity-20  py-14 xl:py-16")}>
       <div className=" container space-y-2  text-center">
         <p className=" text-sm text-center font-bold uppercase text-primary">
           Medici
@@ -58,7 +61,8 @@ const Services = () => {
       </div>
       <div className=" grid  sm:grid-cols-3 xl:grid-cols-4 gap-8 container pt-10">
         {Data.map((item, i) => (
-          <div
+          <Link
+            href={`/services/${item.id}`}
             key={i}
             style={{
               boxShadow: "0px 10px 40px 0px rgba(18, 18, 18, 0.10)",
@@ -67,7 +71,7 @@ const Services = () => {
           >
             <h4 className=" text-xl font-bold">{item.name}</h4>
             <p className="s text-base font-medium">{item.description}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

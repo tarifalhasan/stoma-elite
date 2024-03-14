@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <HomeHero />
       <Medici />
-      <Services />
+      <Services className="bg-skin-tiffany " />
       <Emergency />
       <Location />
     </>
