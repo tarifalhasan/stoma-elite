@@ -53,6 +53,9 @@ const config = {
           DEFAULT: "hsla(var(--card))",
           foreground: "hsla(var(--card-foreground))",
         },
+        skin: {
+          gray: "#696969",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

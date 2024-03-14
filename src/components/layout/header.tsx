@@ -61,7 +61,7 @@ const MainHeader = () => {
   return (
     <header
       className={cn(
-        " hidden lg:flex py-5 z-50 h-[88px] items-center    sticky left-0 right-0 top-0",
+        " hidden lg:flex py-5 z-50 h-[88px] items-center     fixed left-0 right-0 top-0",
         header ? "backdrop-blur-sm bg-white/[0.8] " : " bg-light-gray"
       )}
     >
