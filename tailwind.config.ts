@@ -72,6 +72,9 @@ const config = {
           to: { height: "0" },
         },
       },
+      boxShadow: {
+        card: "0px 10px 40px 0px rgba(18, 18, 18, 0.10)",
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
