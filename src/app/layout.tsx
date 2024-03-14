@@ -1,6 +1,8 @@
 import "@/styles/globals.css";
 import { Manrope as FontSans } from "next/font/google";
 
+import MainHeader from "@/components/layout/header";
+import MobileHeader from "@/components/layout/mobile-header";
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 
@@ -19,6 +21,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           fontSans.variable
         )}
       >
+        <MainHeader />
+        <MobileHeader />
         {children}
       </body>
     </html>
