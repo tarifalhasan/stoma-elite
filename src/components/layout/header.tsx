@@ -21,20 +21,19 @@ export const menuItems: MenuItem[] = [
     id: 1,
   },
   {
-    label: "Prețuri",
-
-    href: "/prices",
+    label: "Servicii",
+    href: "/services",
     id: 2,
   },
   {
     label: "Prețuri",
-    href: "/about",
+    href: "/prices",
     id: 3,
   },
   {
     label: "contact",
 
-    href: "/contacts",
+    href: "/contact",
     id: 4,
   },
 ];
@@ -79,7 +78,12 @@ const MainHeader = () => {
               <li key={index}>
                 <Link
                   href={link.href as string}
-                  className="hover:text-primary transition-all duration-500 text-base lg:text-lg font-medium"
+                  className={cn(
+                    "hover:text-primary transition-all duration-500 text-base lg:text-lg ",
+                    pathName === link.href
+                      ? "text-primary font-bold"
+                      : " font-medium"
+                  )}
                 >
                   {link.label}
                 </Link>
