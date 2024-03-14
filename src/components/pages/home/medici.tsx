@@ -21,7 +21,7 @@ const Medici = () => {
     },
   ];
   return (
-    <section className=" container py-14">
+    <section className=" my-6 container py-14 xl:py-16">
       <div className=" space-y-2  text-center">
         <p className=" text-sm text-center font-bold uppercase text-primary">
           Medici
