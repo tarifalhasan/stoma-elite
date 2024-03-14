@@ -1,16 +1,20 @@
-import Image from "next/image";
-
 const Emergency = () => {
   return (
-    <section className=" items-center py-10 xl:py-12 container grid gap-9 xl:grid-cols-2">
-      <div className="max-h-[280px] ">
-        <Image
+    <section className=" items-center py-10 xl:py-14 container grid gap-9 xl:grid-cols-2">
+      <div
+        className=" h-[200px] sm:h-[280px] "
+        style={{
+          backgroundImage: `url('/images/emerjengy-mask.webp')`,
+          backgroundSize: "100% 100%",
+        }}
+      >
+        {/* <Image
           src={"/images/emerjengy-mask.webp"}
           alt="emerjengy-mask"
           width={604}
           height={302}
           className=" w-full h-full object-cover"
-        />
+        /> */}
       </div>
       <div className=" space-y-5 lg:space-y-7">
         <div className=" space-y-1">
