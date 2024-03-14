@@ -7,15 +7,7 @@ const Emergency = () => {
           backgroundImage: `url('/images/emerjengy-mask.webp')`,
           backgroundSize: "100% 100%",
         }}
-      >
-        {/* <Image
-          src={"/images/emerjengy-mask.webp"}
-          alt="emerjengy-mask"
-          width={604}
-          height={302}
-          className=" w-full h-full object-cover"
-        /> */}
-      </div>
+      ></div>
       <div className=" space-y-5 lg:space-y-7">
         <div className=" space-y-1">
           <p className=" text-sm font-bold text-primary">URGENȚE</p>

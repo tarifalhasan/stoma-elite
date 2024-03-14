@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { Manrope as FontSans } from "next/font/google";
 
+import Footer from "@/components/layout/Footer";
 import MainHeader from "@/components/layout/header";
 import MobileHeader from "@/components/layout/mobile-header";
 import PageLoading from "@/components/page-loading";
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <MainHeader />
         <MobileHeader />
         {children}
+        <Footer />
       </body>
     </html>
   );
