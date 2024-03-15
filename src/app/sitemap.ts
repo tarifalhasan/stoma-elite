@@ -1,19 +1,18 @@
-// import getAllBlogs from "@/services/getAllBlogs";
-// import { PostType } from "@/types";
+import { IService, ServiceDummyData } from "@/data";
 
-// export default async function sitemap() {
-//   const baseUrl = "https://sunmith-official.vercel.app/";
+export default async function sitemap() {
+  const baseUrl = "https://stoma-elite.vercel.app/";
 
-//   const posts: PostType[] = await getAllBlogs();
-//   const postUrls = posts.map((post) => ({
-//     url: `${baseUrl}/blogs/${post.currentSlug}`,
-//     lastModified: post.publishedAt,
-//   }));
+  const posts: IService[] = ServiceDummyData;
+  const postUrls = posts.map((post) => ({
+    url: `${baseUrl}/services/${post.id}`,
+    lastModified: new Date(),
+  }));
 
-//   return [
-//     { url: baseUrl, lastModified: new Date() },
-//     { url: `${baseUrl}/about`, lastModified: new Date() },
+  return [
+    { url: baseUrl, lastModified: new Date() },
+    { url: `${baseUrl}/services`, lastModified: new Date() },
 
-//     ...postUrls,
-//   ];
-// }
+    ...postUrls,
+  ];
+}

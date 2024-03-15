@@ -3,7 +3,7 @@ interface IFeature {
   description: string;
 }
 
-interface IService {
+export interface IService {
   name: string;
   description: string;
   priceList: {

@@ -10,7 +10,7 @@ const ServicesDetails = ({
   };
 }) => {
   const data = ServiceDummyData.find((i) => i.id.toString() === params.slug);
-  console.log(data);
+
   return (
     <div className=" container">
       <div className=" py-10 flex flex-col lg:flex-row  lg:items-center gap-10">
