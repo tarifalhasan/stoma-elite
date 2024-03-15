@@ -1,54 +1,8 @@
+import { ServiceDummyData } from "@/data";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const Services = ({ className }: { className?: string }) => {
-  const Data = [
-    {
-      name: "Endodonție",
-      description: "Obturatii de canal sau extirpari a nervilor.",
-      id: 1,
-    },
-    {
-      name: "Implantologie",
-      description:
-        "Implanturi dentare prin metode minim invazive de chirurgie ghidată.",
-      id: 2,
-    },
-    {
-      name: "Terapie",
-      description: "Tratamente stomatologice cu anestezie generală.",
-      id: 3,
-    },
-    {
-      name: "Protetică fixă",
-      description:
-        'Protezări pe implanturi prin metoda "All on 4" sau "All on 6"',
-      id: 4,
-    },
-    {
-      name: "Ortodonție",
-      description: "Aplicam aparate dentare ortodontice fixe si mobile.",
-      id: 5,
-    },
-    {
-      name: "Protetică mobilă",
-      description:
-        'Protezări imediate pe implanturi prin metoda "One day Implant"',
-      id: 6,
-    },
-    {
-      name: "Chirurgie",
-      description:
-        "Diferite interventii de extractie, gingivectomie sau decapusonare",
-      id: 7,
-    },
-    {
-      name: "Profilaxie",
-      description:
-        "Oferim servicii de estetică dentară realizând albiri dentare cu lampa UV.",
-      id: 8,
-    },
-  ];
   return (
     <section className={cn(className, "bg-opacity-20  py-14 xl:py-16")}>
       <div className=" container space-y-2  text-center">
@@ -60,7 +14,7 @@ const Services = ({ className }: { className?: string }) => {
         </h3>
       </div>
       <div className=" grid  sm:grid-cols-3 xl:grid-cols-4 gap-8 container pt-10">
-        {Data.map((item, i) => (
+        {ServiceDummyData.map((item, i) => (
           <Link
             href={`/services/${item.id}`}
             key={i}

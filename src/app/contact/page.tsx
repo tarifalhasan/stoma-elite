@@ -1,7 +1,23 @@
 import Location from "@/components/shared/Location";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
 import Image from "next/image";
 
+export const metadata: Metadata = {
+  metadataBase: new URL("https://stoma-elite.vercel.app/"),
+  title: {
+    default: "Stoma Elite contact",
+    template: `%s | Stoma Elite contact`,
+  },
+  description:
+    "Va asteptam sa ne vizitati cu sau fara programare de luni pana duminica.",
+  alternates: {
+    canonical: `https://stoma-elite.vercel.app/`,
+    languages: {
+      en: "en-US",
+    },
+  },
+};
 const Conatct = () => {
   return (
     <>
