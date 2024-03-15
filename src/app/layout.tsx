@@ -26,9 +26,6 @@ export const metadata: Metadata = {
       "google-site-verification=gfhLH8SIZqE4f0eVC8AX_IrSG2uL4UNK6YroEVIQ5rk",
   },
   icons: "/fevicon.svg",
-  openGraph: {
-    images: "/images/og.png",
-  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
