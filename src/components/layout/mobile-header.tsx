@@ -68,17 +68,29 @@ const MobileHeader = () => {
           </Link>
         </div>
         {nav && (
-          <ul className="  flex flex-col justify-center items-center gap-1">
-            {menuItems?.map((data, index) => (
+          <ul className="  pb-5 flex flex-col justify-center items-center gap-1">
+            {menuItems?.map((l, index) => (
               <li className=" block" onClick={() => setNav(false)} key={index}>
                 <Link
-                  href={data.href as string}
-                  className="hover:text-primary transition-all duration-500 text-sm lg:text-lg font-medium"
+                  href={l.href as string}
+                  className={cn(
+                    "hover:text-primary transition-all duration-500 text-base lg:text-lg font-medium",
+                    pathName === l.href
+                      ? "text-primary font-bold"
+                      : " font-medium"
+                  )}
                 >
-                  {data.label}
+                  {l.label}
                 </Link>
               </li>
             ))}
+            <div className="flex flex-col  justify-center items-center gap-2">
+              <Link href={"/"}>
+                <Button variant={"outline"} className="px-6">
+                  0725 226 236
+                </Button>
+              </Link>
+            </div>
           </ul>
         )}
       </div>
