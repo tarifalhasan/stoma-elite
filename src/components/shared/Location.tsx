@@ -8,9 +8,8 @@ const Location = () => {
       <div
         style={{
           backgroundImage: `url('/images/location.webp')`,
-          backgroundSize: "100% 100%",
         }}
-        className=" relative overflow-hidden flex flex-col  items-center  h-[400px] bg-no-repeat r w-full"
+        className=" bg-cover relative overflow-hidden flex flex-col  items-center  h-[400px] bg-no-repeat r w-full"
       >
         <div className="container relative h-[400px]">
           <div className="  absolute right-5 sm:-right-[10%] max-w-[90%]  w-full   -translate-y-[80%] top-[80%] sm:max-w-[392px] bg-primary p-5 space-y-4">
