@@ -4,7 +4,6 @@ import { Manrope as FontSans } from "next/font/google";
 import Footer from "@/components/layout/Footer";
 import MainHeader from "@/components/layout/header";
 import MobileHeader from "@/components/layout/mobile-header";
-import PageLoading from "@/components/page-loading";
 import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 import NextTopLoader from "nextjs-toploader";
@@ -54,7 +53,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           showAtBottom={false}
           color="hsl(25, 100%, 50%)"
         />
-        <PageLoading />
+
         <MainHeader />
         <MobileHeader />
         {children}
